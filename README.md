@@ -15,7 +15,7 @@ Which applicants are more likely to get a loan
 3. Applicants with coapplicants
 4. Loans with smaller amount
 
-![Quantity of Loans by category](Images/QofLoans.PNG) 
+![Quantity of Loans by category](images/QofLoans.PNG) 
 
 ## Process
 
@@ -30,7 +30,7 @@ Which applicants are more likely to get a loan
 
 * The existence of extreme values in LoanAmount was manage by using the Log transformation, and additionally, it was possible to adjust the destribution from right skewed to a closer version of normal distribution.
 
-![Histograms of LoanAmount distribution](Images/HLoanAmount.PNG) 
+![Histograms of LoanAmount distribution](images/HLoanAmount.PNG) 
 
 
 #### Step 3: Feature engineering
@@ -54,7 +54,7 @@ Which applicants are more likely to get a loan
 
 ## Results/Demo
 
-![Results](Images/Results.PNG) 
+![Results](images/Results.PNG) 
 
 ## Challanges 
 
