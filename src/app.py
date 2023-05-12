@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from flask_restful import Resource, Api, reqparse
 import pickle
 import pandas as pd
 import numpy as np
@@ -9,12 +10,13 @@ with open('loan_pred.pkl', 'rb') as f:
  #Create an application
 app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET'])
 def predict():
-    # Get data from post request
+    # Get data from get request
     data = request.get_json(force=True)
     print(data)
     data_df = pd.DataFrame(data, index=[0])
+    data_df.shape
     # Predictions with trained model
     predictions = pipeline.predict(data_df)
   
